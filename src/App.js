@@ -1,16 +1,18 @@
 import './App.css';
 import React from 'react';
-import Header from './Shared/Header';
-import Main from './Shared/Main';
-import Footer from './Shared/Footer';
-import Nav from './Components/Nav';
-
+import Header from './Components/Header';
+import Main from './Components/Main';
+import Footer from './Components/Footer';
+import Specials from './Components/Specials';
+import Reserve from './Components/Reserve';
 
 function App() {
   return (
     <>
       <Header />
       <Main />
+      <Specials />
+      <Reserve />
       <Footer />
       </>
   );
