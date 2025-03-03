@@ -1,5 +1,5 @@
 
-const Itemmenu = (props) => {
+const Itemmenu = props => {
     return (
         <div className="contenedor">
             <img src={props.imgSrc} alt="specials" id="food1"/>
@@ -14,10 +14,3 @@ const Itemmenu = (props) => {
 }
 
 export default Itemmenu;
-
-Itemmenu.defaultProps = {
-    imgSrc: "greek salad.jpg",
-    precio: "$50.00",
-    title: "Greek Salad",
-    description: "lslkdfjlsdjflsajdlfjsaldjflsajdflsjadfjlsadjlfjasldfjlsadjflsal"
-}

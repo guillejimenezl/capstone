@@ -1,5 +1,6 @@
 import { Grid } from "@chakra-ui/react"
 import { useState } from "react"
+import '../Assets/form.css'
 
 const Reserve = () => {
     const [state, setState] = useState({ hour: '', date: ''})
@@ -27,8 +28,8 @@ const Reserve = () => {
     }
 
     return (
-        <div>
-            <form style={{display: "grid", maxWidth: "200px", gap: "20px"}}>
+        <div className="form">
+            <form id="Reserve">
    <label htmlFor="res-date">Reserve a table</label>
    <input name='date' onChange={(e) => handleOnChange(e)} type="date" id="res-date"></input>
    <label htmlFor="res-time">Choose time</label>
@@ -47,8 +48,7 @@ const Reserve = () => {
       <option>Birthday</option>
       <option>Anniversary</option>
    </select>
-   <input type="submit" value="Make Your reservation"></input>
-   <button onClick={(e) => sendInformation(e)}>Enviar</button>
+   <input id="submit" type="submit" value="Make Your reservation" onClick={(e) => sendInformation(e)}></input>
             </form>
         </div>
     );

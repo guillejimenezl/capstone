@@ -4,7 +4,7 @@ import { SiKaggle } from "react-icons/si";
 
 const Specials = () => {
   return (
-   <specials>
+   <specials id="Specials">
         <div className="titulo">
             <h5>Today's Specials</h5>
             <button id="menu">Online Menu</button>

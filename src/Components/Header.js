@@ -3,12 +3,13 @@ import '../Assets/header.css'
 const Header = () => {
   return (
     <header className='header-component bg-black'>
-     <nav>
+     <nav id='Home'>
       <img className='logo' src="logo .svg" alt="logo"/>
             <ul>
               <li><a href="#Home">Home</a></li>
-              <li><a href="#about">About</a></li>
-              <li><a href="#booking">Reserve a Table</a></li>
+              <li><a href="#Specials">Specials</a></li>
+              <li><a href="#Reserve">Reserve a Table</a></li>
+              <li><a href="#Contact">Contact</a></li>
             </ul>
       </nav>
   </header>
